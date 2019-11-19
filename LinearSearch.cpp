@@ -32,7 +32,7 @@ int main(int argc, const char * argv[]) {
     unsigned int search = 87;
     unsigned int N = 10;
     
-    unsigned int result_87 = performSearch(A,87,N);
+    unsigned int result_87 = performSearch(A,search,N);
     if(result_87 != -1){
         cout<<"Item "<<search<<" Found At Location "<<result_87<<endl;
     }
