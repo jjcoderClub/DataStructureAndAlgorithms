@@ -38,6 +38,10 @@ void unionOp(int arr[],int size[],int x,int y){
     int root_x = parent(arr,x);
     int root_y = parent(arr,y);
     
+    if (root_x  == root_y ){
+        return;
+    }
+    
     if(size[root_x] < size[root_y]){
         
         arr[root_x] = root_y;
